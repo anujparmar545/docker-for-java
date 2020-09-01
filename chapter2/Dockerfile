@@ -1,3 +1,5 @@
-FROM ubuntu:latest
+FROM openjdk:jdk-alpine
 
-CMD echo "THis is V2"
+COPY myapp/target/myapp-1.0-SNAPSHOT.jar /deployments/
+
+CMD java -jar /deployments/myapp-1.0-SNAPSHOT.jar

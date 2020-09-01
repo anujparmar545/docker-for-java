@@ -115,3 +115,11 @@ docker run \
 . Select documents from the bucket `select * from docker;`
 . Refresh dashboard again
 
+===Saving and loading Docker Images
+```
+. To save docker images to tar.gz file
+	docker save -o my-images.tar.gz image1 image2 image3 <and so on>
+
+. To load docker images from my-images.tar.gz file 
+	docker load -i my-images.tar.gz
+```
