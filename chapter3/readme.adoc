@@ -99,3 +99,12 @@ services:
 == 3.5 Docker Compose options
 
 Slides only
+
+==3.6 Save All docker images(locally) to ta.gz file
+```
+	docker save $(docker images -q) -o C:\mydockerimages.tar.gz
+```
+==3.7 Load All docker images(locally) from ta.gz file
+```
+	docker load -i C:\mydockerimages.tar.gz
+```
